@@ -1,0 +1,10 @@
+package org.tektutor;
+
+public class IPhone5 implements IMobile {
+
+	public void call() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package org.tektutor;
+
+import java.util.ArrayList;
+
+public class PaperWala implements IObservable {
+	
+	private ArrayList<IObserver> subscribers;
+	
+	public PaperWala() {
+		subscribers = new ArrayList<IObserver>();
+	}
+
+	public void addSubscriber(IObserver observer) {
+		// TODO Auto-generated method stub
+		subscribers.add(observer);
+		
+
+	}
+
+	public void removesubscriber(IObserver observer) {
+		// TODO Auto-generated method stub
+		subscribers.remove(observer);
+		
+
+	}
+
+	public void notifyAllSubscribers(String message) {
+		// TODO Auto-generated method stub
+		
+		for(IObserver customer : subscribers)
+			customer.update(message);
+
+	}
+
+}

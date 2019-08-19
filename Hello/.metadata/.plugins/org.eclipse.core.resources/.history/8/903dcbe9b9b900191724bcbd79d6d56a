@@ -1,0 +1,21 @@
+package org.tektutor;
+
+public class AlgorithmFactory {
+	
+	public static IAlgorithm getAlgorithm(String algo) {
+		IAlgorithm algorithm = null;
+		
+		if(algorithm.equals("QuickSort"))
+			algorithm = new QuickSort();
+		else if(algorithm.equals("HeapSort"))
+			algorithm = new HeapSort();
+		else if(algorithm.equals("InsertionSort"))
+			algorithm = new InsertionSort();
+		else
+			algorithm = new NullAlgorithm();
+		
+		return algorithm;
+			
+	}
+
+}

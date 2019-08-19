@@ -1,0 +1,20 @@
+package org.tektutor;
+
+public class PaperWala implements IObservable {
+
+	public void addSubscriber(IObserver observer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void removesubscriber(IObserver observer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void notifyAllSubscribers(String message) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

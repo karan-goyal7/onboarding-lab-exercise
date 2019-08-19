@@ -1,0 +1,15 @@
+package demo;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			String x="David";
+			Object a=x;
+			System.out.println(x);
+			System.out.println(a);
+			Object b="David";
+			String c=(String)b;
+	}
+
+}

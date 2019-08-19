@@ -1,0 +1,8 @@
+package org.tektutor;
+
+public interface IObservable {
+	public void addSubscriber(IObserver observer);
+	public void removesubscriber(IObserver observer);
+	public void modifyAllSubscribers();
+
+}
